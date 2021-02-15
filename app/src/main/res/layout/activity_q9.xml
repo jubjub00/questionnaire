@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".q9">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/kanit"
+        android:text="ในช่วง 2 สัปดาห์ที่ผ่านมารวมทั้งวันนี้ ท่านมีอาการเหล่านี้บ่อยเเค่ไหน"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/q9_1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="เบื่อ ไม่สนใจอยากทำอะไร"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_1_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_1_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="ไม่สบายใจ ซึมเศร้า ท้อแท้"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_2_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_2_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="หลับยาก หรือหลับๆ ตื่นๆ หรือหลับมากไป"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_3_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="เหนื่อยง่าย หรือ ไม่ค่อยมีเเรง"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_4_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_4_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="เบื่ออาหาร หรือกินมากเกินไป"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_5_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_5_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_5_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_5_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_6"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="รู้สึกไม่ดีกับตัวเอง คิดว่าตัวเองล้มเหลวหรือทำให้ตนเองหรือครอบครัวผิดหวัง"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_6_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_6_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_6_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_6_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="สมาธิไม่ดีเวลาทำอะไร เช่นฟังวิทยุ ดูโทรทัศน์"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_7_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_7_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_7_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_7_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_8"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="พูดช้า ทำอะไรช้าลงจนคนอื่นสังเกตุเห็นได้หรือกระสับกระส่ายไม่สามารถอยู่นิ่งได้เหมือนที่เคยเป็น"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_8_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_8_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_8_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_8_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/q9_9"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/kanit"
+                    android:text="คิดทำร้ายตนเอง หรือคิดว่าถ้าตายไปคงจะดี"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_9_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/kanit"
+                            android:text="ไม่มีเลย"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_9_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบางวัน 1-7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_9_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นบ่อย > 7 วัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/q9_9_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kanit"
+                            android:text="เป็นทุกวัน"
+                            android:textSize="15sp"
+                            android:onClick="onRadioButtonClicked"/>
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/kanit"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
